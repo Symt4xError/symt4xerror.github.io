@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: #777777;
+    color: #ffbf23;
+}
+section {
+    min-height: 900px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    padding: 20px;
+    margin: 30px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+.name {
+    display: flex;
+    align-items: center;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.title p, .title h3 {
+    margin: 0;
+}
+#logo {
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+.login {
+    background-color: black;
+    padding: 15px 7px 15px 7px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+nav a {
+    display: flex;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text {
+    margin: 20px;
+}
+#pricingtext {
+    width: 35%;
+}
+#indextext {
+    width: 50%;
+}
+.cardpricing {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    transition: 0.3s;
+    width: 85%;
+}
+.cardpricing:hover {
+    width: 90%;
+}
+.cardpricing p {
+    font-size: 20px;
+    text-align: center;
+}
+.cardpricing a {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+#account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+}
+#account label {
+    font-size: 18px;
+}
+#account input {
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+#account label::selection, #account input::selection {
+    background-color: #777777;
+    color:  #ffbf23;
+}
+.signup {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px 35px 10px 35px;
+    background-color: #ffbf23;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.signup:hover {
+    color: #f1f1f1;
+    background-color: #b28518;
+}
+footer {
+    display: flex;
+    min-height: 500px;
+    background-color: #ffbf23;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}
+.top {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 30px 0px 0px 30px;
+    width: 85%;
+}
+.top p {
+    font-size: 14px;
+}
+.top svg {
+    height: 45px;
+    width: 45px;
+    margin: 20px;
+}
+.bottom {
+    display: flex;
+    max-height: 100%;
+    justify-content: space-around;
+    width: 80%;
+    gap: 30px;
+}
+.footercard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 1px;
+}
+.footercard a {
+    color: black;
+}
+#links {
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#links a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+#links a:hover{
+    color: #ffbf23;
+    background-color: black;
+    border-radius: 7px;
+    padding: 3px;
+}
+a i.fa-brands:hover {
+    color: #ffbf23 !important;
+}
+#main {
+    max-height: 600px;
+    max-width: 600px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navlink:hover {
+    color: #b28518;
+    background-color: #e0dada;
+    border-radius: 10px;
+    padding: 3px;
+}
+#logolink {
+    transition: 0.2s;
+}
+#logolink:hover {
+    color: #b28518;
+}
+#productmain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 150px 0 0 150px;
+    min-height: 1200px;
+}
+#producttext {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+#producttext h1 {
+    font-weight: 400;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    height: 670px;
+    width: 80%;
+}
+.productcard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+}
+.productcard img {
+    border: solid 2px black;
+    border-radius: 10px;
+}
+.linksleft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.linksleft p {
+    width: 70%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: 6px 0 0 6px;
+    width: 60%;
+    font-size: 20px;
+    height: 100%;
+    padding: 7px;
+}
+input:hover {
+    background-color: white;
+}
+#submit {
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 0 10px 10px 0;
+    width: 40%;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+}
+#submit:hover {
+    background-color: #ffbf23;
+}
+.linksright {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.newsletter {
+    padding: 10px;
+}
+@media only screen and (max-width: 1250px) {
+    #productmain {
+        padding: 50px;
+    }
+    .cards {
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    #links {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .bottom {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #links {
+        width: 30%;
+    }
+    .linksleft, .linksright {
+        align-self: start;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #pricingtext {
+        display: flex;
+        flex-direction: column;
+        min-width: 85%;
+        align-items: center;   
+    }
+    #producttext {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    #account {
+        width: 70%;
+    }
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #links {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #main {
+        height: 350px;
+        width: 350px;
+    }
+    .text {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    header {
+        flex-direction: column;
+    }
+    header p {
+        display: none;
+    }
+    header a {
+        margin: 15px;
+    }
+
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .signup {
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+    }
+    .bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footercard {
+        width: 95%;    
+        padding: 10px 0 20px 10px;
+        align-items: center;
+    }
+    #productmain {
+        padding: 10px;
+    }
+    #links {
+        min-width: 100%;
+    }
+    input {
+        width: 60%;
+    }
+    #submit {
+        width: 40%;
+    }
+    .bottom {
+        align-items: center;
+    }
+}
